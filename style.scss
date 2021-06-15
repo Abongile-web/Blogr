@@ -28,3 +28,76 @@ $Very-dark-desaturated-blue: hsl(237, 23%, 32%);
 html {
   scroll-behavior: smooth;
 }
+
+//all buttons
+button {
+  background-color: transparent;
+  border: none;
+  outline: hidden;
+}
+
+//list items
+li {
+  list-style: none;
+}
+
+//Hero 1 section
+.hero-1 {
+  background: linear-gradient(to right, $Very-light-red, $Light-red);
+  height: 80vh;
+
+  //navigation section
+  .navigation {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 10vh;
+    margin: 0 auto;
+    padding-top: 2vh;
+
+    .left {
+      display: flex;
+      width: 80%;
+      align-items: center;
+
+      img {
+        padding-right: 40px;
+      }
+
+      .menu-item {
+        padding: 0 20px;
+
+        button {
+          color: $White;
+
+          img {
+            padding-left: 5px;
+          }
+        }
+        .dropdown-hover {
+          display: none;
+        }
+      }
+    }
+
+    .right {
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        padding: 0 20px;
+        color: $White;
+      }
+
+      #signup {
+        background-color: $White;
+        color: $Light-red;
+        padding: 10px 25px;
+        border-radius: 20px;
+        font-weight: 700;
+      }
+    }
+  }
+}

@@ -9,4 +9,89 @@
 html {
   scroll-behavior: smooth;
 }
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+.hero-1 {
+  background: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+  background: linear-gradient(to right, #ff8f70, #ff3d54);
+  height: 80vh;
+}
+
+.hero-1 .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  height: 10vh;
+  margin: 0 auto;
+  padding-top: 2vh;
+}
+
+.hero-1 .navigation .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-1 .navigation .left img {
+  padding-right: 40px;
+}
+
+.hero-1 .navigation .left .menu-item {
+  padding: 0 20px;
+}
+
+.hero-1 .navigation .left .menu-item button {
+  color: white;
+}
+
+.hero-1 .navigation .left .menu-item button img {
+  padding-left: 5px;
+}
+
+.hero-1 .navigation .left .menu-item .dropdown-hover {
+  display: none;
+}
+
+.hero-1 .navigation .right {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-1 .navigation .right button {
+  padding: 0 20px;
+  color: white;
+}
+
+.hero-1 .navigation .right #signup {
+  background-color: white;
+  color: #ff3d54;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-weight: 700;
+}
 /*# sourceMappingURL=style.css.map */
