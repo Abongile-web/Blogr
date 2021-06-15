@@ -97,6 +97,23 @@ li {
         padding: 10px 25px;
         border-radius: 20px;
         font-weight: 700;
+        border: 2px solid $White;
+        transition-duration: 267ms;
+
+        &:hover {
+          color: $White;
+          background-color: transparent;
+          border: 2px solid $White;
+          cursor: pointer;
+        }
+      }
+
+      #login {
+        transition-duration: 267ms;
+        &:hover {
+          color: $Very-light-red;
+          cursor: pointer;
+        }
       }
     }
   }

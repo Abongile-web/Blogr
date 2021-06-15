@@ -93,5 +93,25 @@ li {
   padding: 10px 25px;
   border-radius: 20px;
   font-weight: 700;
+  border: 2px solid white;
+  -webkit-transition-duration: 267ms;
+          transition-duration: 267ms;
+}
+
+.hero-1 .navigation .right #signup:hover {
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.hero-1 .navigation .right #login {
+  -webkit-transition-duration: 267ms;
+          transition-duration: 267ms;
+}
+
+.hero-1 .navigation .right #login:hover {
+  color: #ff8f70;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
