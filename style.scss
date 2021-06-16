@@ -29,6 +29,11 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Overpass", sans-serif;
+  overflow-x: hidden;
+}
+
 //all buttons
 button {
   background-color: transparent;
@@ -43,8 +48,16 @@ li {
 
 //Hero 1 section
 .hero-1 {
-  background: linear-gradient(to right, $Very-light-red, $Light-red);
+  background-image: url("./images/bg-pattern-intro.svg"),
+    linear-gradient(to right, $Very-light-red, $Light-red);
+  background-position: bottom 42% right 70%;
   height: 80vh;
+
+  // #bg-img {
+  //   position: absolute;
+  //   top: -140%;
+  //   z-index: 2;
+  // }
 
   //navigation section
   .navigation {
@@ -62,6 +75,7 @@ li {
 
       img {
         padding-right: 40px;
+        cursor: pointer;
       }
 
       .menu-item {
@@ -69,6 +83,12 @@ li {
 
         button {
           color: $White;
+          cursor: pointer;
+
+          &:hover {
+            color: $Light-red;
+            transition-duration: 267ms;
+          }
 
           img {
             padding-left: 5px;
@@ -113,6 +133,63 @@ li {
         &:hover {
           color: $Very-light-red;
           cursor: pointer;
+        }
+      }
+    }
+  }
+
+  //Main hero section
+  .main-hero {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $White;
+
+    h1 {
+      font-size: 60px;
+      padding: 20px;
+    }
+
+    span {
+      font-size: 20px;
+      padding-bottom: 20px;
+    }
+
+    .call-to-action {
+      padding: 20px;
+
+      a {
+        text-decoration: none;
+        color: $White;
+        font-weight: 700;
+        margin: 0 5px;
+      }
+
+      #start {
+        background-color: $White;
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: 2px solid $White;
+        color: $light-red;
+        transition-duration: 267ms;
+
+        &:hover {
+          color: $White;
+          background-color: transparent;
+        }
+      }
+
+      #learn {
+        border: 2px solid $White;
+        padding: 10px 20px;
+        border-radius: 20px;
+        transition-duration: 267ms;
+
+        &:hover {
+          background-color: $White;
+          color: $light-red;
         }
       }
     }

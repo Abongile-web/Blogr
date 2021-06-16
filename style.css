@@ -10,6 +10,11 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Overpass", sans-serif;
+  overflow-x: hidden;
+}
+
 button {
   background-color: transparent;
   border: none;
@@ -21,8 +26,9 @@ li {
 }
 
 .hero-1 {
-  background: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
-  background: linear-gradient(to right, #ff8f70, #ff3d54);
+  background-image: url("./images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+  background-image: url("./images/bg-pattern-intro.svg"), linear-gradient(to right, #ff8f70, #ff3d54);
+  background-position: bottom 42% right 70%;
   height: 80vh;
 }
 
@@ -51,6 +57,7 @@ li {
 
 .hero-1 .navigation .left img {
   padding-right: 40px;
+  cursor: pointer;
 }
 
 .hero-1 .navigation .left .menu-item {
@@ -59,6 +66,13 @@ li {
 
 .hero-1 .navigation .left .menu-item button {
   color: white;
+  cursor: pointer;
+}
+
+.hero-1 .navigation .left .menu-item button:hover {
+  color: #ff3d54;
+  -webkit-transition-duration: 267ms;
+          transition-duration: 267ms;
 }
 
 .hero-1 .navigation .left .menu-item button img {
@@ -113,5 +127,72 @@ li {
 .hero-1 .navigation .right #login:hover {
   color: #ff8f70;
   cursor: pointer;
+}
+
+.hero-1 .main-hero {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+.hero-1 .main-hero h1 {
+  font-size: 60px;
+  padding: 20px;
+}
+
+.hero-1 .main-hero span {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.hero-1 .main-hero .call-to-action {
+  padding: 20px;
+}
+
+.hero-1 .main-hero .call-to-action a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  margin: 0 5px;
+}
+
+.hero-1 .main-hero .call-to-action #start {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid white;
+  color: #ff525d;
+  -webkit-transition-duration: 267ms;
+          transition-duration: 267ms;
+}
+
+.hero-1 .main-hero .call-to-action #start:hover {
+  color: white;
+  background-color: transparent;
+}
+
+.hero-1 .main-hero .call-to-action #learn {
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  -webkit-transition-duration: 267ms;
+          transition-duration: 267ms;
+}
+
+.hero-1 .main-hero .call-to-action #learn:hover {
+  background-color: white;
+  color: #ff525d;
 }
 /*# sourceMappingURL=style.css.map */
