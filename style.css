@@ -29,7 +29,7 @@ li {
   background-image: url("./images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
   background-image: url("./images/bg-pattern-intro.svg"), linear-gradient(to right, #ff8f70, #ff3d54);
   background-position: bottom 42% right 70%;
-  border-radius: 0 0 0 100px;
+  border-radius: 0 0 0 50px;
   height: 80vh;
 }
 
