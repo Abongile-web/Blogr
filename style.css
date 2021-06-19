@@ -70,12 +70,6 @@ li {
   cursor: pointer;
 }
 
-.hero-1 .navigation .left .menu-item button:hover {
-  color: #ff3d54;
-  -webkit-transition-duration: 267ms;
-          transition-duration: 267ms;
-}
-
 .hero-1 .navigation .left .menu-item button img {
   padding-left: 5px;
 }
@@ -313,5 +307,31 @@ li {
 .hero-4 .content p {
   width: 80%;
   line-height: 25px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #2c2d3f;
+  padding: 80px 0;
+  color: white;
+}
+
+.footer img {
+  width: 80px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.footer ul h4 {
+  padding-bottom: 40px;
+}
+
+.footer ul li {
+  line-height: 30px;
+  color: #c8c8cb;
 }
 /*# sourceMappingURL=style.css.map */
