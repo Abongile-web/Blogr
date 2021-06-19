@@ -52,7 +52,7 @@ li {
     linear-gradient(to right, $Very-light-red, $Light-red);
   background-position: bottom 42% right 70%;
   border-radius: 0 0 0 50px;
-  height: 80vh;
+  min-height: 80vh;
 
   // #bg-img {
   //   position: absolute;
@@ -65,7 +65,7 @@ li {
     display: flex;
     align-items: center;
     width: 80%;
-    height: 10vh;
+    min-height: 10vh;
     margin: 0 auto;
     padding-top: 2vh;
 
@@ -193,6 +193,84 @@ li {
           color: $light-red;
         }
       }
+    }
+  }
+}
+
+//hero 2 section
+.hero-2 {
+  h2 {
+    text-align: center;
+    padding: 40px;
+    color: $Very-dark-blue;
+    font-size: 30px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .left {
+      width: 40%;
+
+      h3 {
+        color: $Very-dark-blue;
+        padding: 40px 0;
+        font-size: 22px;
+      }
+
+      p {
+        width: 80%;
+        line-height: 25px;
+      }
+    }
+
+    .right {
+      width: 40%;
+      margin-top: -100px;
+      img {
+        width: 700px;
+      }
+    }
+  }
+}
+
+//hero 3 section
+.hero-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $Very-dark-desaturated-blue;
+  color: $White;
+  margin-top: 80px;
+  background-image: url("./images/bg-pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 0% right 120%;
+  border-radius: 0 100px 0 100px;
+  background-size: 58%;
+
+  .image {
+    width: 40%;
+
+    img {
+      width: 80%;
+    }
+  }
+
+  .content {
+    width: 40%;
+
+    h2 {
+      padding: 40px 0;
+      font-size: 30px;
+    }
+
+    p {
+      width: 600px;
+      line-height: 30px;
+      font-size: 20px;
     }
   }
 }

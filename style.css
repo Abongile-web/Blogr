@@ -30,7 +30,7 @@ li {
   background-image: url("./images/bg-pattern-intro.svg"), linear-gradient(to right, #ff8f70, #ff3d54);
   background-position: bottom 42% right 70%;
   border-radius: 0 0 0 50px;
-  height: 80vh;
+  min-height: 80vh;
 }
 
 .hero-1 .navigation {
@@ -41,7 +41,7 @@ li {
       -ms-flex-align: center;
           align-items: center;
   width: 80%;
-  height: 10vh;
+  min-height: 10vh;
   margin: 0 auto;
   padding-top: 2vh;
 }
@@ -195,5 +195,93 @@ li {
 .hero-1 .main-hero .call-to-action #learn:hover {
   background-color: white;
   color: #ff525d;
+}
+
+.hero-2 h2 {
+  text-align: center;
+  padding: 40px;
+  color: #1f3f5b;
+  font-size: 30px;
+}
+
+.hero-2 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hero-2 .content .left {
+  width: 40%;
+}
+
+.hero-2 .content .left h3 {
+  color: #1f3f5b;
+  padding: 40px 0;
+  font-size: 22px;
+}
+
+.hero-2 .content .left p {
+  width: 80%;
+  line-height: 25px;
+}
+
+.hero-2 .content .right {
+  width: 40%;
+  margin-top: -100px;
+}
+
+.hero-2 .content .right img {
+  width: 700px;
+}
+
+.hero-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #3f4164;
+  color: white;
+  margin-top: 80px;
+  background-image: url("./images/bg-pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 0% right 120%;
+  border-radius: 0 100px 0 100px;
+  background-size: 58%;
+}
+
+.hero-3 .image {
+  width: 40%;
+}
+
+.hero-3 .image img {
+  width: 80%;
+}
+
+.hero-3 .content {
+  width: 40%;
+}
+
+.hero-3 .content h2 {
+  padding: 40px 0;
+  font-size: 30px;
+}
+
+.hero-3 .content p {
+  width: 600px;
+  line-height: 30px;
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */
