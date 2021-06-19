@@ -240,7 +240,7 @@ li {
 //hero 3 section
 .hero-3 {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: $Very-dark-desaturated-blue;
   color: $White;
@@ -271,6 +271,33 @@ li {
       width: 600px;
       line-height: 30px;
       font-size: 20px;
+    }
+  }
+}
+
+//hero 4 section
+.hero-4 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  img {
+    width: 40%;
+    margin: 80px 0;
+  }
+
+  .content {
+    width: 40%;
+
+    h3 {
+      color: $Very-dark-blue;
+      padding: 40px 0;
+      font-size: 22px;
+    }
+
+    p {
+      width: 80%;
+      line-height: 25px;
     }
   }
 }
