@@ -440,32 +440,16 @@ li {
   .hero-2 h2 {
     font-size: 25px;
   }
-  .hero-2 .content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap-reverse;
-        flex-wrap: wrap-reverse;
-  }
   .hero-2 .content .left {
     width: 100%;
     text-align: center;
     padding: 0 20px;
   }
   .hero-2 .content .left h3 {
-    color: #1f3f5b;
-    padding: 40px 0;
     font-size: 18px;
   }
   .hero-2 .content .left p {
     width: 100%;
-    line-height: 25px;
     font-size: 13px;
   }
   .hero-2 .content .right {
@@ -476,42 +460,19 @@ li {
     width: 80%;
   }
   .hero-3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    background-color: #3f4164;
-    color: white;
-    margin-top: 80px;
-    background-image: url("./images/bg-pattern-circles.svg");
-    background-repeat: no-repeat;
-    background-position: bottom 0% right 120%;
-    border-radius: 0 100px 0 100px;
-    background-size: 58%;
-    padding: 40px 0;
-  }
-  .hero-3 .image {
-    width: 600px;
-  }
-  .hero-3 .image img {
-    width: 100%;
+    background-position: bottom 100% right 120%;
+    background-size: 100%;
   }
   .hero-3 .content {
-    width: 600px;
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
   }
   .hero-3 .content h2 {
-    padding: 40px 0;
-    font-size: 30px;
+    font-size: 25px;
   }
   .hero-3 .content p {
-    line-height: 30px;
-    font-size: 20px;
+    font-size: 13px;
   }
   .hero-4 {
     display: -webkit-box;

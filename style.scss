@@ -438,25 +438,17 @@ li {
     }
 
     .content {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap-reverse;
-
       .left {
         width: 100%;
         text-align: center;
         padding: 0 20px;
 
         h3 {
-          color: $Very-dark-blue;
-          padding: 40px 0;
           font-size: 18px;
         }
 
         p {
           width: 100%;
-          line-height: 25px;
           font-size: 13px;
         }
       }
@@ -473,39 +465,20 @@ li {
 
   //hero 3 section
   .hero-3 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: $Very-dark-desaturated-blue;
-    color: $White;
-    margin-top: 80px;
-    background-image: url("./images/bg-pattern-circles.svg");
-    background-repeat: no-repeat;
-    background-position: bottom 0% right 120%;
-    border-radius: 0 100px 0 100px;
-    background-size: 58%;
-    padding: 40px 0;
-
-    .image {
-      width: 600px;
-
-      img {
-        width: 100%;
-      }
-    }
+    background-position: bottom 100% right 120%;
+    background-size: 100%;
 
     .content {
-      width: 600px;
+      width: 100%;
+      text-align: center;
+      padding: 0 20px;
 
       h2 {
-        padding: 40px 0;
-        font-size: 30px;
+        font-size: 25px;
       }
 
       p {
-        line-height: 30px;
-        font-size: 20px;
+        font-size: 13px;
       }
     }
   }
