@@ -52,6 +52,7 @@ li {
   background-image: url("./images/bg-pattern-intro.svg"),
     linear-gradient(to right, $Very-light-red, $Light-red);
   background-position: bottom 42% right 70%;
+  background-repeat: no-repeat;
   border-radius: 0 0 0 50px;
   min-height: 80vh;
 
@@ -137,12 +138,13 @@ li {
 
   //Main hero section
   .main-hero {
-    height: 70vh;
+    min-height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: $White;
+    text-align: center;
 
     h1 {
       font-size: 60px;
@@ -206,10 +208,10 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
 
     .left {
-      width: 40%;
+      width: 600px;
 
       h3 {
         color: $Very-dark-blue;
@@ -224,10 +226,10 @@ li {
     }
 
     .right {
-      width: 40%;
-      margin-top: -100px;
+      width: 600px;
+      margin-top: -80px;
       img {
-        width: 700px;
+        width: 100%;
       }
     }
   }
@@ -238,6 +240,7 @@ li {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   background-color: $Very-dark-desaturated-blue;
   color: $White;
   margin-top: 80px;
@@ -246,17 +249,18 @@ li {
   background-position: bottom 0% right 120%;
   border-radius: 0 100px 0 100px;
   background-size: 58%;
+  padding: 40px 0;
 
   .image {
-    width: 40%;
+    width: 600px;
 
     img {
-      width: 80%;
+      width: 100%;
     }
   }
 
   .content {
-    width: 40%;
+    width: 600px;
 
     h2 {
       padding: 40px 0;
@@ -275,14 +279,15 @@ li {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 40px;
   img {
-    width: 40%;
+    width: 600px;
     margin: 80px 0;
   }
 
   .content {
-    width: 40%;
+    width: 600px;
 
     h3 {
       color: $Very-dark-blue;
@@ -324,6 +329,238 @@ li {
 }
 
 //mobile styling
-
 @media screen and (max-width: 768px) {
+  .hero-3 {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  //Hero 1 section
+  .hero-1 {
+    // background-size: contain;
+    //navigation section
+    .navigation {
+      display: flex;
+      align-items: center;
+      width: 80%;
+      min-height: 10vh;
+      margin: 0 auto;
+      padding-top: 2vh;
+
+      .left {
+        display: flex;
+        width: 80%;
+        align-items: center;
+
+        img {
+          padding-right: 40px;
+          cursor: pointer;
+        }
+
+        .menu-item {
+          padding: 0 20px;
+
+          button {
+            color: $White;
+            cursor: pointer;
+
+            img {
+              padding-left: 5px;
+            }
+          }
+          .dropdown-hover {
+            display: none;
+          }
+        }
+      }
+
+      .right {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+          padding: 0 20px;
+          color: $White;
+        }
+
+        #signup {
+          background-color: $White;
+          color: $Light-red;
+          padding: 10px 25px;
+          border-radius: 20px;
+          font-weight: 700;
+          border: 2px solid $White;
+          transition-duration: 267ms;
+
+          &:hover {
+            color: $White;
+            background-color: transparent;
+            border: 2px solid $White;
+            cursor: pointer;
+          }
+        }
+
+        #login {
+          transition-duration: 267ms;
+          &:hover {
+            color: $Very-light-red;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    //Main hero section
+    .main-hero {
+      h1 {
+        font-size: 28px;
+      }
+
+      span {
+        font-size: 13px;
+      }
+
+      .call-to-action {
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  //hero 2 section
+  .hero-2 {
+    h2 {
+      font-size: 25px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap-reverse;
+
+      .left {
+        width: 100%;
+        text-align: center;
+        padding: 0 20px;
+
+        h3 {
+          color: $Very-dark-blue;
+          padding: 40px 0;
+          font-size: 18px;
+        }
+
+        p {
+          width: 100%;
+          line-height: 25px;
+          font-size: 13px;
+        }
+      }
+
+      .right {
+        margin: -20px 0 0 0;
+        text-align: center;
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  //hero 3 section
+  .hero-3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: $Very-dark-desaturated-blue;
+    color: $White;
+    margin-top: 80px;
+    background-image: url("./images/bg-pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position: bottom 0% right 120%;
+    border-radius: 0 100px 0 100px;
+    background-size: 58%;
+    padding: 40px 0;
+
+    .image {
+      width: 600px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .content {
+      width: 600px;
+
+      h2 {
+        padding: 40px 0;
+        font-size: 30px;
+      }
+
+      p {
+        line-height: 30px;
+        font-size: 20px;
+      }
+    }
+  }
+
+  //hero 4 section
+  .hero-4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    img {
+      width: 600px;
+      margin: 80px 0;
+    }
+
+    .content {
+      width: 600px;
+
+      h3 {
+        color: $Very-dark-blue;
+        padding: 40px 0;
+        font-size: 22px;
+      }
+
+      p {
+        width: 80%;
+        line-height: 25px;
+      }
+    }
+  }
+
+  //footer section
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: $Very-dark-gray-blue;
+    padding: 80px 0;
+    color: $White;
+
+    img {
+      width: 80px;
+      height: 50px;
+      cursor: pointer;
+    }
+
+    ul {
+      h4 {
+        padding-bottom: 40px;
+      }
+
+      li {
+        line-height: 30px;
+        color: $Grayish-blue;
+      }
+    }
+  }
 }
