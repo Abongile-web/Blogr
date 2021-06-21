@@ -429,13 +429,14 @@ li {
     cursor: pointer;
   }
   .hero-1 .main-hero h1 {
-    font-size: 28px;
+    font-size: 25px;
   }
   .hero-1 .main-hero span {
     font-size: 13px;
+    padding: 5px;
   }
   .hero-1 .main-hero .call-to-action a {
-    font-size: 12px;
+    font-size: 10px;
   }
   .hero-2 h2 {
     font-size: 25px;
