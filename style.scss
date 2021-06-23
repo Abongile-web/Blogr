@@ -71,10 +71,27 @@ li {
     margin: 0 auto;
     padding-top: 2vh;
 
+    .mobile {
+      > img {
+        display: none;
+      }
+
+      > i {
+        display: none;
+        color: white;
+        font-size: 22px;
+      }
+    }
+
     .left {
       display: flex;
       width: 80%;
       align-items: center;
+
+      #login,
+      #signup {
+        display: none;
+      }
 
       img {
         padding-right: 40px;
@@ -341,28 +358,76 @@ li {
     // background-size: contain;
     //navigation section
     .navigation {
-      display: flex;
-      align-items: center;
-      width: 80%;
-      min-height: 10vh;
-      margin: 0 auto;
-      padding-top: 2vh;
+      width: 90%;
+      flex-direction: column;
+
+      .mobile {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        > img {
+          display: block;
+          cursor: pointer;
+        }
+
+        > i {
+          display: block;
+          color: white;
+          font-size: 22px;
+          cursor: pointer;
+        }
+      }
 
       .left {
-        display: flex;
-        width: 80%;
+        flex-direction: column;
+        background-color: $White;
+        width: 100%;
         align-items: center;
+        position: absolute;
+        top: 10vh;
+        // transform: translateY(-200%);
+        // transition: ease;
+
+        #signup {
+          background-color: $Light-red;
+          color: $White;
+          padding: 10px 25px;
+          border-radius: 20px;
+          font-weight: 700;
+          border: 2px solid $light-red;
+          transition-duration: 267ms;
+          display: block;
+          margin: 20px 0;
+
+          &:hover {
+            color: $light-red;
+            border: 2px solid $light-red;
+          }
+        }
+
+        #login {
+          transition-duration: 267ms;
+          display: block;
+          margin-top: 20px;
+          &:hover {
+            color: $Very-light-red;
+            cursor: pointer;
+          }
+        }
 
         img {
           padding-right: 40px;
           cursor: pointer;
+          display: none;
         }
 
         .menu-item {
           padding: 0 20px;
 
           button {
-            color: $White;
+            color: $Very-dark-blue;
+            padding: 15px 0;
             cursor: pointer;
 
             img {
@@ -376,30 +441,34 @@ li {
       }
 
       .right {
-        width: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        background-color: $White;
+        padding-top: 20px;
+        position: absolute;
+        top: 30vh;
+        display: none;
+        // transform: translateY(-200%);
+        // transition: ease;
 
         button {
+          margin: 10px 0;
           padding: 0 20px;
-          color: $White;
+          color: $Very-dark-blue;
         }
 
         #signup {
-          background-color: $White;
-          color: $Light-red;
+          background-color: $Light-red;
+          color: $White;
           padding: 10px 25px;
           border-radius: 20px;
           font-weight: 700;
-          border: 2px solid $White;
+          border: 2px solid $light-red;
           transition-duration: 267ms;
 
           &:hover {
-            color: $White;
-            background-color: transparent;
-            border: 2px solid $White;
-            cursor: pointer;
+            color: $light-red;
+            border: 2px solid $light-red;
           }
         }
 

@@ -48,6 +48,16 @@ li {
   padding-top: 2vh;
 }
 
+.hero-1 .navigation .mobile > img {
+  display: none;
+}
+
+.hero-1 .navigation .mobile > i {
+  display: none;
+  color: white;
+  font-size: 22px;
+}
+
 .hero-1 .navigation .left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,6 +66,11 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.hero-1 .navigation .left #login,
+.hero-1 .navigation .left #signup {
+  display: none;
 }
 
 .hero-1 .navigation .left img {
@@ -351,35 +366,84 @@ li {
 
 @media screen and (max-width: 767px) {
   .hero-1 .navigation {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero-1 .navigation .mobile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 80%;
-    min-height: 10vh;
-    margin: 0 auto;
-    padding-top: 2vh;
+  }
+  .hero-1 .navigation .mobile > img {
+    display: block;
+    cursor: pointer;
+  }
+  .hero-1 .navigation .mobile > i {
+    display: block;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
   }
   .hero-1 .navigation .left {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: white;
+    width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: absolute;
+    top: 10vh;
+  }
+  .hero-1 .navigation .left #signup {
+    background-color: #ff3d54;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-weight: 700;
+    border: 2px solid #ff525d;
+    -webkit-transition-duration: 267ms;
+            transition-duration: 267ms;
+    display: block;
+    margin: 20px 0;
+  }
+  .hero-1 .navigation .left #signup:hover {
+    color: #ff525d;
+    border: 2px solid #ff525d;
+  }
+  .hero-1 .navigation .left #login {
+    -webkit-transition-duration: 267ms;
+            transition-duration: 267ms;
+    display: block;
+    margin-top: 20px;
+  }
+  .hero-1 .navigation .left #login:hover {
+    color: #ff8f70;
+    cursor: pointer;
   }
   .hero-1 .navigation .left img {
     padding-right: 40px;
     cursor: pointer;
+    display: none;
   }
   .hero-1 .navigation .left .menu-item {
     padding: 0 20px;
   }
   .hero-1 .navigation .left .menu-item button {
-    color: white;
+    color: #1f3f5b;
+    padding: 15px 0;
     cursor: pointer;
   }
   .hero-1 .navigation .left .menu-item button img {
@@ -389,36 +453,35 @@ li {
     display: none;
   }
   .hero-1 .navigation .right {
-    width: 30%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: white;
+    padding-top: 20px;
+    position: absolute;
+    top: 30vh;
+    display: none;
   }
   .hero-1 .navigation .right button {
+    margin: 10px 0;
     padding: 0 20px;
-    color: white;
+    color: #1f3f5b;
   }
   .hero-1 .navigation .right #signup {
-    background-color: white;
-    color: #ff3d54;
+    background-color: #ff3d54;
+    color: white;
     padding: 10px 25px;
     border-radius: 20px;
     font-weight: 700;
-    border: 2px solid white;
+    border: 2px solid #ff525d;
     -webkit-transition-duration: 267ms;
             transition-duration: 267ms;
   }
   .hero-1 .navigation .right #signup:hover {
-    color: white;
-    background-color: transparent;
-    border: 2px solid white;
-    cursor: pointer;
+    color: #ff525d;
+    border: 2px solid #ff525d;
   }
   .hero-1 .navigation .right #login {
     -webkit-transition-duration: 267ms;
