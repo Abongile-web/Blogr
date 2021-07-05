@@ -350,6 +350,39 @@ li {
   .hero-3 {
     padding-bottom: 40px;
   }
+
+  .hero-1 {
+    .navigation {
+      width: 90%;
+      flex-direction: column;
+
+      .mobile {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        > img {
+          display: block;
+          cursor: pointer;
+        }
+
+        > i {
+          display: block;
+          color: white;
+          font-size: 22px;
+          cursor: pointer;
+        }
+      }
+
+      .left {
+        display: none;
+      }
+
+      .right {
+        display: none;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -386,6 +419,7 @@ li {
         align-items: center;
         position: absolute;
         top: 10vh;
+        display: none;
         // transform: translateY(-200%);
         // transition: ease;
 

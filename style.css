@@ -362,6 +362,41 @@ li {
   .hero-3 {
     padding-bottom: 40px;
   }
+  .hero-1 .navigation {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero-1 .navigation .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-1 .navigation .mobile > img {
+    display: block;
+    cursor: pointer;
+  }
+  .hero-1 .navigation .mobile > i {
+    display: block;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .hero-1 .navigation .left {
+    display: none;
+  }
+  .hero-1 .navigation .right {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -406,6 +441,7 @@ li {
             align-items: center;
     position: absolute;
     top: 10vh;
+    display: none;
   }
   .hero-1 .navigation .left #signup {
     background-color: #ff3d54;
